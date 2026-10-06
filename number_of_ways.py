@@ -3,7 +3,7 @@ from tqdm import tqdm
 
 def numberOfWays(startPos: int, endPos: int, k: int) -> int:
     """
-    Solving Leetcode Problem.
+    Solving Leetcode Problem below.
     https://leetcode.com/problems/number-of-ways-to-reach-a-position-after-exactly-k-steps/
     
     Given two positive integers startPos and endPos
@@ -13,10 +13,10 @@ def numberOfWays(startPos: int, endPos: int, k: int) -> int:
     
     Given a positive integer k, return the number of different ways to
     reach the position endPos starting from startPos, such that you
-    perform exactly k steps.
+    perform exactly k steps.    
     """
     # start with path of length 1
-    paths = [startPos]
+    paths = [[startPos]]
 
     # loop k times
     for i in tqdm(range(k)):
